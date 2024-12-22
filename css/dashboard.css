@@ -1,14 +1,14 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Warna latar belakang yang konsisten */
+    background-color: #f4f4f9; 
     margin: 0;
     padding: 0;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #5cb85c; /* Warna hijau untuk navbar */
+    background-color: #5cb85c; 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar h1 {
-    color: white; /* Teks putih untuk judul */
+    color: white; 
     margin: 0;
 }
 
@@ -28,14 +28,14 @@ body {
 .navbar .btn {
     color: white;
     text-decoration: none;
-    background-color: #4cae4c; /* Warna tombol */
+    background-color: #4cae4c; 
     padding: 8px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .navbar .btn:hover {
-    background-color: #3e8e41; /* Warna tombol lebih gelap saat hover */
+    background-color: #3e8e41; 
 }
 
 /* Main Content */
@@ -76,7 +76,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #5cb85c; /* Warna hijau saat fokus */
+    border-color: #5cb85c; 
     outline: none;
 }
 

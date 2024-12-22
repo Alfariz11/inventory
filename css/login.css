@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Warna latar belakang yang sama */
+    background-color: #f4f4f9; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,17 +14,17 @@ body {
 .container {
     width: 100%;
     max-width: 400px;
-    background: white; /* Warna dasar container */
+    background: white; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333333; /* Warna teks utama */
+    color: #333333; 
 }
 
 form {
@@ -43,20 +43,20 @@ input {
 }
 
 input:focus {
-    border-color: #5cb85c; /* Warna hijau fokus input */
+    border-color: #5cb85c; 
     outline: none;
 }
 
 /* Error Message */
 .error-message {
-    color: red; /* Warna pesan error */
+    color: red; 
     font-size: 12px;
     margin-top: -5px;
     margin-bottom: 10px;
 }
 
 input[aria-invalid="true"] {
-    border: 1px solid red; /* Warna merah untuk input salah */
+    border: 1px solid red; 
     outline: none;
 }
 
@@ -64,8 +64,8 @@ input[aria-invalid="true"] {
 button {
     padding: 10px;
     border: none;
-    background: #5cb85c; /* Warna hijau tombol */
-    color: white; /* Warna teks tombol */
+    background: #5cb85c; 
+    color: white; 
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -73,8 +73,8 @@ button {
 }
 
 button:hover {
-    background: #4cae4c; /* Warna hijau lebih gelap saat hover */
-    transform: translateY(-2px); /* Efek pergeseran tombol */
+    background: #4cae4c;
+    transform: translateY(-2px); 
 }
 
 /* Text and Links */
@@ -85,14 +85,14 @@ form p {
 }
 
 form p a {
-    color: #007bff; /* Warna biru untuk link */
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 form p a:hover {
-    color: #0056b3; /* Warna biru lebih gelap saat hover */
+    color: #0056b3;
 }
 
 /* Animation */
