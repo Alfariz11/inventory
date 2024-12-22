@@ -1,18 +1,30 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; 
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Container Styles */
 .container {
     width: 100%;
     max-width: 400px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
+    background: white; 
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; 
 }
 
 form {
@@ -20,104 +32,33 @@ form {
     flex-direction: column;
 }
 
+/* Input Fields */
 input {
-    margin-bottom: 15px;
-    padding: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
-    transition: border 0.3s ease;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
 }
 
 input:focus {
-    border: 1px solid #007bff;
+    border-color: #5cb85c; 
     outline: none;
 }
 
-button {
-    padding: 12px;
-    border: none;
-    background: #5cb85c;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #4cae4c;
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-    padding-left: 2px;
-}
-
+/* Password Fields */
 .password-field {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.password-field input {
-    width: 93%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.toggle-btn {
-    position: absolute;
-    right: 10px;
-    top: 40%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.toggle-btn svg {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-}
-
-.toggle-btn:focus {
-    outline: none;
-}
-
-.toggle-btn:hover {
-    opacity: 0.7;
-}
-
-.toggle-btn svg {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-}
-
-.container form p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.container form p a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.container form p a:hover {
-    color: #0056b3;
+/* Error Message */
+.error-message {
+    color: red; 
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 input[aria-invalid="true"] {
@@ -125,33 +66,49 @@ input[aria-invalid="true"] {
     outline: none;
 }
 
-.alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    text-align: center;
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    background: #5cb85c; 
+    color: white; 
     font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.alert.success {
-    background-color: #4CAF50;
-    color: white;
+button:hover {
+    background: #4cae4c; 
+    transform: translateY(-2px); 
 }
 
-.alert.error {
-    background-color: #f44336;
-    color: white;
+/* Text and Links */
+form p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 480px) {
-    .container {
-        width: 90%;
-        padding: 20px;
+form p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+form p a:hover {
+    color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-
-    input, button {
-        font-size: 14px;
-        padding: 10px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
