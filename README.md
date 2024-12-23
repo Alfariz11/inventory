@@ -1,49 +1,67 @@
 # UAS PEMROGRAMAN WEBSITE RA
 Rizki Alfariz Ramadhan
 
-### **Bagian 1: Client-side Programming (Bobot: 30%)**
-#### **1.1 Manipulasi DOM dengan JavaScript (15%)**
-- **Form Input:** Formulir dengan minimal 4 elemen input (teks, checkbox, radio, dll.).
-- **Tabel HTML:** Data dari server ditampilkan dalam tabel HTML.
-- **Manipulasi DOM:** Pengolahan elemen DOM menggunakan JavaScript.
+# **Inventory Management System**
 
-#### **1.2 Event Handling (15%)**
-- **Event Handling:** Implementasi minimal 3 event untuk meng-handle formulir.
-- **Validasi Form:** Validasi input di sisi client sebelum diproses oleh server.
+Aplikasi sistem manajemen inventaris berbasis web menggunakan PHP, MySQL, dan JavaScript. Aplikasi ini memungkinkan pengguna untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada produk, serta mengelola data pengguna melalui sesi dan cookie.
 
----
+## **Bagian 1: Client-side Programming**
 
-### **Bagian 2: Server-side Programming (Bobot: 30%)**
-#### **2.1 Pengelolaan Data dengan PHP (20%)**
-- **Metode HTTP:** Gunakan metode POST atau GET untuk menangani data formulir.
-- **Validasi Server:** Validasi data dari variabel global PHP.
-- **Penyimpanan:** Data disimpan ke basis data, termasuk jenis browser dan alamat IP pengguna.
+### **1.1 Manipulasi DOM dengan JavaScript**
 
-#### **2.2 Objek PHP Berbasis OOP (10%)**
-- **Class PHP:** Implementasi class berbasis OOP dengan minimal dua metode.
-- **Skenario:** Gunakan class tersebut dalam konteks aplikasi.
+Aplikasi ini menggunakan JavaScript untuk menangani manipulasi DOM sebagai berikut:
+- **Form Input:** Formulir dengan 4 elemen input yang terdiri dari teks, email, password, dan input untuk menambah produk.
+- **Tabel HTML:** Menampilkan data produk dari server dalam tabel HTML.
+- **Manipulasi DOM:** Menggunakan JavaScript untuk menangani aksi pengguna seperti konfirmasi penghapusan produk.
 
----
+### **1.2 Event Handling**
 
-### **Bagian 3: Database Management (Bobot: 20%)**
-#### **3.1 Pembuatan Tabel Database (5%)**
-- **Tabel Database:** Desain tabel untuk menyimpan data pengguna.
+Aplikasi ini menangani beberapa jenis event pada elemen input:
+- **Event pada Formulir:** Menangani pengiriman formulir dengan validasi input terlebih dahulu.
+- **Validasi Form:** Melakukan validasi di sisi klien (JavaScript) untuk memastikan data yang dikirimkan valid.
 
-#### **3.2 Konfigurasi Koneksi Database (5%)**
-- **Koneksi Database:** Konfigurasi file PHP untuk menghubungkan aplikasi dengan database.
+## **Bagian 2: Server-side Programming**
 
-#### **3.3 Manipulasi Data pada Database (10%)**
-- **Operasi CRUD:** Implementasi operasi Create, Read, Update, dan Delete pada database.
+### **2.1 Pengelolaan Data dengan PHP**
 
----
+Aplikasi menggunakan PHP untuk mengelola data pengguna dan produk:
+- **Metode HTTP:** Menggunakan metode POST dan GET untuk menangani data yang dikirimkan melalui formulir.
+- **Validasi Server:** Melakukan validasi data formulir di server sebelum disimpan ke database.
+- **Penyimpanan Data:** Data produk dan pengguna disimpan di database MySQL, termasuk informasi tentang browser dan alamat IP pengguna.
 
-### **Bagian 4: State Management (Bobot: 20%)**
-#### **4.1 State Management dengan Session (10%)**
-- **Session Management:** Gunakan `session_start()` untuk memulai session.
-- **Penyimpanan Data:** Simpan informasi pengguna ke dalam session.
+### **2.2 Objek PHP Berbasis OOP**
 
-#### **4.2 Pengelolaan State dengan Cookie dan Browser Storage (10%)**
-- **Cookie Management:** Implementasikan fungsi untuk menetapkan, mendapatkan, dan menghapus cookie.
-- **Browser Storage:** Gunakan localStorage atau sessionStorage untuk menyimpan data secara lokal.
+Aplikasi ini menggunakan pendekatan OOP untuk mengelola data:
+- **Class PHP:** Implementasi class seperti `Product` untuk menangani operasi CRUD pada produk, dan `User` untuk pengelolaan data pengguna.
+- **Skenario:** Setiap operasi CRUD dilakukan melalui method dalam class tersebut, seperti `addProduct`, `updateProduct`, `deleteProduct`, dan `getProductById`.
 
----
+## **Bagian 3: Database Management**
+
+### **3.1 Pembuatan Tabel Database**
+
+Aplikasi menggunakan tabel MySQL untuk menyimpan data pengguna dan produk:
+- **Tabel Pengguna:** Menyimpan informasi pengguna seperti username, email, dan password yang di-hash.
+- **Tabel Produk:** Menyimpan informasi produk seperti nama, deskripsi, harga, serta data browser dan IP pengguna.
+
+### **3.2 Konfigurasi Koneksi Database**
+
+Konfigurasi koneksi ke database dilakukan dengan file `config/database.php` yang menghubungkan aplikasi dengan database MySQL.
+
+### **3.3 Manipulasi Data pada Database**
+
+Operasi CRUD dilakukan pada tabel MySQL melalui objek PHP:
+- **Create:** Menambahkan produk baru ke dalam database.
+- **Read:** Menampilkan produk yang ada dari database ke halaman utama.
+- **Update:** Memperbarui informasi produk yang sudah ada.
+- **Delete:** Menghapus produk dari database.
+
+## **Bagian 4: State Management**
+
+### **4.1 State Management dengan Session**
+
+Aplikasi menggunakan PHP `session_start()` untuk menyimpan data pengguna dalam sesi dan memastikan hanya pengguna yang terautentikasi yang dapat mengakses dashboard.
+
+### **4.2 Pengelolaan State dengan Cookie dan Browser Storage**
+
+- **Cookie Management:** Menggunakan cookie untuk menyimpan informasi sementara pada sisi pengguna, seperti nama cookie dan nilainya.
+- **Browser Storage:** Dapat diimplementasikan menggunakan localStorage atau sessionStorage untuk menyimpan data di sisi klien secara lokal.
