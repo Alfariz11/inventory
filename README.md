@@ -10,7 +10,7 @@ Rizki Alfariz Ramadhan
 - Menampilkan data dari server ke dalam table 
 ![Picture](https://github.com/Alfariz11/inventory/blob/main/img/1.1.png)
 
-    1.2. Event Handling 
+      1.2. Event Handling 
 
 - Membuat event handling minimal 3 untuk form
 
