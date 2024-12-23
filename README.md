@@ -6,7 +6,7 @@ Rizki Alfariz Ramadhan
     1.1. Manipulasi DOM dengan JavaScript
 
 - Form Input dengan minimal 4 element input 
-    ![Picture](https://github.com/Alfariz11/inventory/blob/main/img/1.1.png)
+![Picture](https://github.com/Alfariz11/inventory/blob/main/img/1.1.png)
 - Menampilkan data dari server ke dalam table 
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
