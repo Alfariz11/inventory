@@ -1,14 +1,17 @@
+
 # UAS PEMROGRAMAN WEBSITE RA
+
 Rizki Alfariz Ramadhan
 
 
 
 ## Bagian 1 Client-side Programming
     1.1. Manipulasi DOM dengan JavaScript
-    
-Membuat 4 elemen input form
+
+- Form Input dengan minimal 4 element input 
 ![Picture](https://github.com/Alfariz11/inventory/blob/main/img/1.1.png)
-Menampilkan data dari server ke dalam sebuah tabel HTML.
+- Menampilkan data dari server ke dalam table 
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
     1.2. Event Handling 
 
