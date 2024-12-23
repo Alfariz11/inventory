@@ -1,5 +1,5 @@
 # UAS PEMROGRAMAN WEBSITE RA
-Rizki Alfariz Ramadhan
+Rizki Alfariz Ramadhan || 122140061 | RA
 
 # **Inventory Management System**
 
