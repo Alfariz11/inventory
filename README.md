@@ -5,8 +5,8 @@ Rizki Alfariz Ramadhan
 
 ## Bagian 1 Client-side Programming
     1.1. Manipulasi DOM dengan JavaScript
+    Membuat 4 elemen input 
 ![Picture](https://github.com/Alfariz11/inventory/blob/main/img/1.1.png)
-
 
     1.2. Event Handling 
 
